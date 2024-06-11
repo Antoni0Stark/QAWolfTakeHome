@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif, Calibri;
+    font-size: 16px;
+}
+
+label {
+    user-select: none;
+}
+
+::selection {
+    color: white;
+    background: blue;
+}
+
+::placeholder {
+    color: gray;
+}

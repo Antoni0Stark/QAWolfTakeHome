@@ -3,15 +3,45 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "build:css": "postcss src/css --dir build",
+    "watch:css": "postcss src/css --dir build, --w"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "playwright": "^1.39.0"
+    "@vitejs/plugin-react": "^4.3.1",
+    "playwright": "^1.39.0",
+    "react-dom": "^18.3.1",
+    "vite": "^5.2.13"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
-    "@types/node": "^20.8.9"
+    "@types/node": "^20.8.9",
+    "autoprefixer": "^10.4.19",
+    "@lodder/grunt-postcss": "^3.1.1",
+    "cssnano": "^5.0.15",
+    "grunt": "^1.4.1",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^9.0.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.2.0",
+    "stylelint": "^14.3.0",
+    "stylelint-config-standard": "^24.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "stylelint": {
+    "rules": {
+      "color-no-invalid-hex": true
+    }
   }
 }
